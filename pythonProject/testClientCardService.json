@@ -1,0 +1,20 @@
+{
+  "1": {
+    "py/object": "Domain.cardClient.CardClient",
+    "id_entitate": "1",
+    "nume": "Ada",
+    "prenume": "M",
+    "cnp": 459494394,
+    "data_nasterii": "10.12.1990",
+    "data_inregistrarii": "12.12.2019,12:12"
+  },
+  "2": {
+    "py/object": "Domain.cardClient.CardClient",
+    "id_entitate": "2",
+    "nume": "Aurica",
+    "prenume": "P",
+    "cnp": 459434394,
+    "data_nasterii": "10.12.1990",
+    "data_inregistrarii": "12.12.2019,12:12"
+  }
+}

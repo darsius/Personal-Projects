@@ -1,0 +1,10 @@
+{
+  "10": {
+    "py/object": "Domain.car.Masina",
+    "id_entitate": "10",
+    "model": "audi",
+    "an_achizitie": 2000,
+    "nr_km": 10000,
+    "in_garantie": "nu"
+  }
+}

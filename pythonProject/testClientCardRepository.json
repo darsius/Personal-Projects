@@ -1,0 +1,11 @@
+{
+  "2": {
+    "py/object": "Domain.cardClient.CardClient",
+    "id_entitate": "2",
+    "nume": "DD",
+    "prenume": "Gal",
+    "cnp": "5020803264320",
+    "data_nasterii": "12.12.2000",
+    "data_inregistrarii": "12.12.2001"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "2": {
+    "py/object": "Domain.tranzactie.Tranzactie",
+    "id_entitate": "2",
+    "id_masina": "2",
+    "id_card": "2",
+    "suma_piese": 5000,
+    "suma_manopera": 360.0,
+    "data": "15.10.2019,10:32"
+  }
+}

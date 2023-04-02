@@ -1,0 +1,20 @@
+{
+  "1": {
+    "py/object": "Domain.transaction.Tranzactie",
+    "id_entitate": "1",
+    "id_masina": "10",
+    "id_card": "11",
+    "suma_piese": 30,
+    "suma_manopera": 45.0,
+    "data": "12.12.1212,14:20"
+  },
+  "2": {
+    "py/object": "Domain.transaction.Tranzactie",
+    "id_entitate": "2",
+    "id_masina": "10",
+    "id_card": "11",
+    "suma_piese": 30,
+    "suma_manopera": 45.0,
+    "data": "15.12.1212,14:20"
+  }
+}
