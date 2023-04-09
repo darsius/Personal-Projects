@@ -1,0 +1,12 @@
+
+.img_profile{
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-background-color: red;
+    -fx-border-color: #000000;
+    -fx-border-width: 3px;
+}
+
+btn_logOut {
+    -fx-background-color: blue;
+}

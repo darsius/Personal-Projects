@@ -1,0 +1,37 @@
+.root {
+    -fx-background-color: #FFAFAF;
+    -fx-font-family: "sans-serif";
+}
+.button {
+    -fx-text-fill: black;
+
+    -fx-font-weight: bold;
+    -fx-background-color: #FFEBCC;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+.label {
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*lb_logIn{*/
+/*        -fx-font-size: 1;*/
+/*        -fx-text-fill: red;*/
+/*}*/
+
+/*#logintext{*/
+/*    -fx-font-size: 32px;*/
+/*    -fx-font-family: "Arial Black";*/
+/*    -fx-fill: #2A5058;*/
+/*}*/
+#textResponse {
+    -fx-fill: FIREBRICK;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+/*}*/

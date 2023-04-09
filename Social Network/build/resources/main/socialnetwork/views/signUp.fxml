@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" stylesheets="@../css/singUp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.SignUpController">
+   <children>
+      <AnchorPane layoutX="294.0" layoutY="143.0" prefHeight="500.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="500.0" prefWidth="400.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="138.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Lab5/src/main/resources/socialnetwork/images/avatar.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="183.0" layoutY="211.0" text="SIGN UP">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="firstname" layoutX="133.0" layoutY="250.0" promptText="First Name" />
+                  <TextField fx:id="lastname" layoutX="133.0" layoutY="290.0" promptText="Last Name" />
+                  <TextField fx:id="username" layoutX="133.0" layoutY="331.0" promptText="Username" />
+                  <PasswordField fx:id="password" layoutX="133.0" layoutY="372.0" promptText="Password" />
+                  <Button fx:id="btn_login" layoutX="90.0" layoutY="420.0" mnemonicParsing="false" onAction="#goToLogIn" text="Log In">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Hyperlink fx:id="create_acc" layoutX="213.0" layoutY="422.0" onAction="#signUp" text="Create new Account" textFill="WHITE" />
+                  <Button fx:id="btn_exit" layoutX="359.0" layoutY="12.0" mnemonicParsing="false" onAction="#exit" prefHeight="12.0" prefWidth="27.0" text="X" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

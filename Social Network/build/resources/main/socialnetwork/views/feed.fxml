@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/feed.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.FeedController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="1008.0" stylesheets="@../css/feed.css">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="139.0" layoutX="45.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.gif" />
+               </image></ImageView>
+            <Button fx:id="btn_log_out" layoutX="43.0" layoutY="551.0" mnemonicParsing="false" onAction="#goToLogOut" text="Log out" />
+            <Label layoutX="50.0" layoutY="213.0" text="Welcome,  ">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_username" layoutX="54.0" layoutY="250.0" prefHeight="22.0" prefWidth="88.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <ToolBar layoutX="231.0" prefHeight="40.0" prefWidth="562.0" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="187.0" prefHeight="600.0" prefWidth="818.0" style="-fx-background-color: #e8c2ca;">
+         <children>
+            <ImageView fx:id="img_background" fitHeight="145.0" fitWidth="628.0" layoutX="128.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: e8c2cb;">
+               <image>
+                  <Image url="@../images/pexels-pixabay-255419.jpg" />
+               </image>
+            </ImageView>
+          <Button fx:id="btn_exit" layoutX="779.0" layoutY="8.0" mnemonicParsing="false" onAction="#exit" text="X">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="img_profile" fitHeight="130.0" fitWidth="156.0" layoutX="79.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true" styleClass="img_profile">
+               <image>
+                  <Image url="@../images/logo2.jpg" />
+               </image>
+            </ImageView>
+            <ScrollPane layoutX="371.0" layoutY="300.0" prefHeight="225.0" prefWidth="278.0">
+               <content>
+                  <TableView fx:id="tb_friends" prefHeight="222.0" prefWidth="276.0">
+                    <columns>
+                      <TableColumn fx:id="cl_tb_friends" prefWidth="183.0" text="Friends" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <Button fx:id="btn_add_friend" layoutX="215.0" layoutY="267.0" mnemonicParsing="false" onAction="#searchUser" text="Add" />
+            <Button fx:id="btn_search" layoutX="545.0" layoutY="267.0" mnemonicParsing="false" text="O" />
+            <TextField fx:id="tf_search_user" layoutX="35.0" layoutY="267.0" promptText="Search an user:" />
+            <ScrollPane layoutX="35.0" layoutY="312.0" prefHeight="219.0" prefWidth="219.0">
+               <content>
+                  <TableView fx:id="tb_friend_requests" prefHeight="220.0" prefWidth="227.0">
+                    <columns>
+                      <TableColumn fx:id="cl_tb_friend_requests" prefWidth="204.0" text="Friend Requests" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <Button fx:id="btn_accept" layoutX="59.0" layoutY="548.0" mnemonicParsing="false" onAction="#acceptFriendRequest" text="Accept" />
+            <Button fx:id="btn_decline" layoutX="147.0" layoutY="548.0" mnemonicParsing="false" onAction="#rejectFriendRequest" text="Decline" />
+            <TextField layoutX="371.0" layoutY="267.0" promptText="Search Friend" />
+            <Button fx:id="btn_handleProfileImg" layoutX="254.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleProfileImage" prefHeight="26.0" prefWidth="15.0" text="I" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

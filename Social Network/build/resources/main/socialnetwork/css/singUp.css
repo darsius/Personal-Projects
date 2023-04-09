@@ -1,0 +1,25 @@
+.root {
+    -fx-background-color: #FF9999;
+    -fx-font-family: "sans-serif";
+}
+.button {
+    -fx-text-fill: black;
+
+    -fx-font-weight: bold;
+    -fx-background-color: #FFEBCC;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+.label {
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hyperlink {
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
